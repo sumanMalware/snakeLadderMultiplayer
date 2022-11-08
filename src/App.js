@@ -11,7 +11,7 @@ let player_Icon = ["❤️", "💛", "💚", "💙"]
 let player_Name = ["Rithin", "Suman", "Srini", "shiva"]
 
 
-const App = () => {``
+const App = () => {
     function refreshPage() {
         window.location.reload();
     }
