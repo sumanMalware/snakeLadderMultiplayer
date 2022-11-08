@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+body {
+    background-color: rgb(235, 235, 148);
+    font-family: 'Silkscreen';
+    margin-top: 10px;
+    
+  }
+
+.gridclass{
+    text-align: center;
+    background-color: rgb(175, 218, 218);
+    color: white;    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 5px solid rgb(59, 169, 156); */
+    grid-gap: 7px;
+   
+}
+.snakeClass{
+
+  /* background-color: brown; */
+  /* background-image: url('snakeGif.gif'); */
+  border-radius: 10px;
+  height: 4.6rem;
+  width: 5rem;
+  color: brown;
+  z-index: 1;
+  border: 1px solid rgb(238, 16, 16);
+  /* z-index: 1; */
+
+}
+
+.laddersClass{
+  /* background-color: rgb(112, 171, 61); */
+  border-radius: 10px;
+  height: 4.6rem;
+  width: 5rem;
+  border : 1px solid rgb(37, 158, 37);
+  color: green;
+
+}
+.normal{
+  background-color: rgb(37, 126, 126);
+}
+
+
+.ghj{
+  margin-top: 10px;
+ 
+}
+.ladder1{
+  position: absolute;
+  height: 300px;
+  width: 90px;
+  rotate: -24deg;
+  margin-left: 45rem;
+  margin-top: 35rem;
+  opacity: 0.8;
+
+}
+.ladder2{
+  position: absolute;
+  height: 150px;
+  width: 100px;
+  rotate: -13deg;
+  margin-left: 224px;
+  margin-top: 48px;
+  opacity: 0.8;
+}
+.ladder3{
+  position: absolute;
+  height: 220px;
+  width: 100px;
+  rotate: 56deg;
+  margin-left: 631px;
+  margin-top: 111px;
+  opacity: 0.8;
+}
+.ladder4{
+  position: absolute;
+  height: 150px;
+  width: 100px;
+  rotate: -13deg;
+  margin-left: 415px;
+  margin-top: 410px;
+  opacity: 0.8;
+}
+.ladder5{
+  position: absolute;
+  height: 156px;
+  width: 100px;
+  rotate: 40deg;
+  margin-left: 40px;
+  margin-top: 500px;
+  opacity: 0.8;
+}
+.snake1{
+
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 34rem;
+  margin-top: 33rem;
+  z-index: 1;
+  /* opacity: 0.9; */
+
+}
+.snake2{
+
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 11.5rem;
+  margin-top: 38.2rem;
+
+  /* opacity: 0.9; */
+}
+.snake3{
+
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  margin-top: 10rem;
+
+}
+.snake4{
+
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 6rem;
+  margin-top: -8px;
+  opacity: 0.9;
+}
+.snake5{
+
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 45.5rem;
+  margin-top: 21.5rem;
+  opacity: 0.9;
+}
+
+#title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  color: rgb(20, 114, 142);
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 900px 200px;
+  
+}
+
+#container{
+
+  margin-left: 11rem;
+  height: 50em;
+  width: 50em; 
+  padding: 1rem;   
+  background-color: aquamarine;
+  border-radius: 20px;
+  box-shadow:5px 5px #ada0a0;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;    
+}
+.one{
+  background-color: rgb(111, 111, 150);
+  height: 15rem;
+  color: rgb(208, 221, 226);
+
+  
+
+
+}
+.three{
+
+  background-color: rgb(109, 163, 125);
+  height: 12rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 20px;
+  
+
+}
+
+
+#diceimg{
+  /* margin-top: 30px; */
+  height: 7rem; 
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+  cursor: pointer;
+
+}
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+#diceimg:hover{
+  height: 6.5rem;
+  
+
+}
+
+
+#display{
+  height: 6rem;
+  width: 7rem;
+  background-color: rgb(220, 33, 33);
+  border-radius: 1rem;
+  padding-top: 5px;
+
+
+}
+.dicepoint{
+
+  margin-left: 5rem;
+  color: white;
+  font-size: 2rem;
+  
+
+}
+
+.dicepoint2{
+padding: 2rem;
+  margin-left: 5rem;
+}
+
+.num1{
+  height: 1px;
+  width: 1px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: orange;
+  color: white;
+  
+}
+.num2{
+  height: 1px;
+  width: 1px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color:black;
+  color: white;
+  
+}
+#turn{
+  height: 2.4rem;
+  background-color: #f7e9e9;
+  color: orange;
+}
+
+.playerpoint{
+  color: white;
+}
+
+#refresh{
+width: 10rem;
+height: 3.5rem;
+margin-left: 18rem;
+font-family: 'Silkscreen';
+background-color: greenyellow;
+color: red;
+border-radius: 10px;
+border-color: white;
+
+}
+
+#refresh:hover{
+animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+
+@keyframes zoom-in-zoom-out {
+0% {
+transform: scale(1, 1);
+}
+50% {
+transform: scale(1.5, 1.5);
+}
+100% {
+transform: scale(1, 1);
+}
+}
+
+
+
